@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
+<script>
+function add() 
+{
+    var a=parseInt(document.getElementById('number1').value);
+    var b=parseInt(document.getElementById('number2').value);
+    document.getElementById('result').innerHTML=a+b;
+}
+function sub() 
+{
+    var a=parseInt(document.getElementById('number1').value);
+    var b=parseInt(document.getElementById('number2').value);
+    document.getElementById('result').innerHTML=a-b;
+}
+function mul() 
+{
+    var a=parseInt(document.getElementById('number1').value);
+    var b=parseInt(document.getElementById('number2').value);
+    document.getElementById('result').innerHTML=a*b;
+}
+function div() 
+{
+    var a=parseInt(document.getElementById('number1').value);
+    var b=parseInt(document.getElementById('number2').value);
+    document.getElementById('result').innerHTML=a/b;
+}
+function rem() 
+{
+    var a=parseInt(document.getElementById('number1').value);
+    var b=parseInt(document.getElementById('number2').value);
+    document.getElementById('result').innerHTML=a%b;
+}
+</script>
+<body>
+    <center>
+    <fieldset style="background-color:lightcyan; width : 10cm;">
+    <h2><center> This Is My Simple Converter</center></h2>
+    <hr><fieldset style="background-color:azure;">
+    Enter 1st number:
+    <input type="number" placeholder="Enter 1st number" id="number1"><br><br>
+    Enter 2nd number:
+    <input type="number" placeholder="Enter 2st number" id="number2"><br><br>
+    <label>
+    <input type="button" value="Add" onclick="add()">&nbsp &nbsp;
+    <input type="button" value="Sub" onclick="sub()">&nbsp &nbsp;
+    <input type="button" value="Mul" onclick="mul()"> &nbsp &nbsp;
+    <input type="button" value="Div" onclick="div()"> &nbsp &nbsp;
+    <input type="button" value="Rem" onclick="rem()">&nbsp  &nbsp;<br><br>
+    <h2>result:
+    <output type="number" value="result" id="result" ></output></h2>
+</fieldset>
+</fieldset>
+</center>
+</body>
+</html>

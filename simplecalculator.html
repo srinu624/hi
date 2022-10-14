@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            min-height: 70cm;
+            min-width: 60cm;
+        }
+        input [type="button"]
+        {
+            background-color: orange;
+            color: black;
+            border:solid black2px;
+            width:100%
+        }
+        input [type="text"]
+        {
+            background-color: white;
+            border:solid black2px;
+            width:100%
+        }
+        
+    </style>
+</head>
+<body style="background-color:darkcyan;">
+    <fieldset style="background-color:aquamarine;width:5cm">
+        <h2 style="border:blue;border-width:5%;border-style:outset;"><center>This is my first simple calculator</center></h2>
+      
+        <script>
+            function view(num)
+            {
+                document.getElementById("result").value+=num;
+            }
+            function compute()
+            {
+                let x=document.getElementById("result").value;
+                let y=eval(x);
+                document.getElementById("result").value=y;
+            }
+            function clr()
+            {
+                document.getElementById("result").value = ""
+            }
+    
+        </script>
+        <center>
+        <table style="background-color:beige;border:5px inset;">
+            <tr>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" value="c" onclick="clr()"/></td>
+            </tr>
+          
+            <tr>
+                <td><input type="button" value="1" onclick="view('1')"/></td>
+                <td><input type="button" value="2" onclick="view('2')"/></td>
+                <td><input type="button" value="3" onclick="view('3')"/></td>
+                <td><input type="button" value="/" onclick="view('/')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="view('4')"/></td>
+                <td><input type="button" value="5" onclick="view('5')"/></td>
+                <td><input type="button" value="6" onclick="view('6')"/></td>
+                <td><input type="button" value="-" onclick="view('-')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="view('7')"/></td>
+                <td><input type="button" value="8" onclick="view('8')"/></td>
+                <td><input type="button" value="9" onclick="view('9')"/></td>
+                <td><input type="button" value="+" onclick="view('+')"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="view('.')"/></td>
+                <td><input type="button" value="0" onclick="view('0')"/></td>
+                <td><input type="button" value="=" onclick="compute('=')"/></td>
+                <td><input type="button" value="*" onclick="view('*')"/></td>
+            </tr>
+        </table><br><br>
+    </center>
+        <div style="background-color:aliceblue;border:5px dotted;">
+            <h1><b>calculator:</b></h1>
+    <p>A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.
+
+        However, more sophisticated calculators can handle exponential operations, square roots, logarithms, trigonometric functions and hyperbolic functions. Internally, some calculators perform all these functions by repeated addition processes.
+        
+        The evolution of the calculator
+        Most calculators these days require electricity to operate or are battery-powered calculators. Calculators work by performing programmed functions based on numerical inputs.
+        
+        Before the electronic calculator (circa 1970), a more primitive calculator, the slide rule, was commonly used. It consisted of a slat of wood called the slide that could be moved in and out of a reinforced pair of slats. Both the slide and the outer pair of slats had calibrated numerical scales.
+        
+        
+        Example of a basic calculator
+        A movable, transparent sleeve called the cursor was used to align numerals on the scales. The slide rule did not require any power source, but its precision was limited, and it was necessary to climb a learning curve to become proficient with it.
+        
+        One of the most primitive calculators, the abacus, is still used in some regions of the Far East. The abacus acts as an adding machine that uses groups of beads to denote numbers.
+        
+        Like the slide rule, the abacus requires no source of power. The beads are positioned in several parallel rows and can be moved up and down to denote arithmetic operations. It is said that a skilled abacus user can do some calculations just as fast as a person equipped with a battery-powered calculator.
+        
+        Modern calculators
+        As calculators became more advanced during the 1970s, they were able to make problem-solving computations involving variables (unknowns). These were the first personal computers.
+        
+        Additionally, calculators have digital versions that can be downloaded or come with most smartphone and personal computer operating systems.
+        
+        Today's personal computers can still perform such operations, and most are provided with a virtual calculator program that looks, on screen, like a hand-held calculator. The buttons are actuated by pointing and clicking.
+        
+        Theoretically, a modern computer is a calculator that works with binary numbers and has a much larger memory. But in the practical sense, a computer is far more than a mere calculator because of the wide variety of noncomputational tasks it can perform.
+        
+        Types of calculators
+        Calculators have evolved over the last several decades. Today, there are a variety of calculators, from brands such as Casio and Texas Instruments, available to serve different mathematical needs. Let's look at a few of them.
+        
+        Basic calculators
+        The most basic calculator is the four-function calculator, which can perform basic arithmetic such as addition, subtraction, multiplication and division.
+        
+        These are sometimes called pocket calculators or hand-held electronic calculators because they are small enough to fit in a shirt pocket. They are also the least expensive calculator, costing around $5 or less.<br>
+        
+        Four-function calculators usually have a +, -, x and / sign to denote the operations and can produce decimal numbers. Some also have a % button, which is used to calculate percentages.<br>
+        </p>
+        
+</fieldset>
+</body>
+</html>

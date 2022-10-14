@@ -1,0 +1,12 @@
+body {
+    background :limegreen;
+    font-family: 'popins',sans-serif;
+}
+#form {
+    width:60px;
+    margin: 20px outset;
+    padding: 40px;
+    background-color:whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
